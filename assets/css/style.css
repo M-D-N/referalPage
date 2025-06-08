@@ -1,0 +1,265 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+/* END RESET */
+
+/* HEADER */
+
+.header__menu {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0088cc;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+.header__logo {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+.header__menu ul {
+  margin-right: 20px;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.header__menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+}
+
+.header__nav h1 {
+  font-size: 2rem;
+  line-height: 100%;
+}
+
+.header__nav p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.ref-button {
+  display: inline-block;
+  background: #0088cc;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.ref-button:hover {
+  background: #0077b3;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+main {
+  margin: 50px 0;
+}
+main h2 {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.articles {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.article {
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 505px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #222;
+  text-decoration: none;
+}
+.article img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.article img:hover {
+  transform: scale(1.05);
+}
+.article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.8rem;
+  color: #888;
+}
+.article__posts.container {
+  max-width: 960px;
+}
+
+.article__posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
+.article__posts-img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__title {
+  position: relative;
+  padding-left: 20px;
+}
+
+.main__title::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 5px;
+  background-color: #0088cc;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__content p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.main__content .wp-block-list {
+  padding-left: 35px;
+  margin: 5px 0;
+  list-style: circle;
+}
+.main__content .wp-block-list li {
+  font-size: 20px;
+  line-height: 200%;
+  transition: all 300ms;
+  /* width: max-content; */
+}
+.main__content .wp-block-list li::marker {
+  color: #0088cc;
+  font-size: 1.2em; /* можно даже увеличить кружок */
+}
+.main__content .wp-block-list li:hover {
+  color: #0077b3;
+}
+.main__content .wp-block-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 125%;
+  margin: 5px 0;
+  color: #0088cc;
+}
+.main__content .wp-block-heading {
+  font-size: 35px;
+  line-height: 170%;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.arrow__up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.arrow__up a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+}
+.arrow__up a img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 850px) {
+  .articles {
+    justify-content: center;
+  }
+}
